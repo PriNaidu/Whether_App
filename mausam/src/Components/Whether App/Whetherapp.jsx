@@ -37,10 +37,11 @@ const Whetherapp = () => {
         temperature[0].innerHtml = data.main.temperature + "°c";
         location[0].innerHtml = data.name;
 
-        // if(data.whether[0].icon === "01d" || data.whether[0].icon === "01n")
-        // {
-        //     setWicon
-        // }
+        if(data.whether[0].icon === "01d" || data.whether[0].icon === "01n")
+        {
+            setWicon
+        }
+        else if(data.whether[0].icon === "02n" || data.whether[0].icon === "02n")
     
 
     }
